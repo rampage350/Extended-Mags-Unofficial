@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>ExtendedMags</AssemblyName>
+    <RootNamespace>ExtendedMags</RootNamespace>
+    <!-- Server loads mods from SPT_Runtime/user/mods/<folder>/ -->
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- Verify exact versions exist on nuget.org; 4.1.3 is the minimum WTT-ServerCommonLib 3.0.8 requires. -->
+    <PackageReference Include="SPTushonka.Server.Core" Version="4.1.6" PrivateAssets="all" ExcludeAssets="runtime" />
+    <PackageReference Include="SPTushonka.DI" Version="4.1.6" PrivateAssets="all" ExcludeAssets="runtime" />
+    <PackageReference Include="SPTushonka.Common" Version="4.1.6" PrivateAssets="all" ExcludeAssets="runtime" />
+    <PackageReference Include="WTT-ServerCommonLib" Version="3.0.8" PrivateAssets="all" ExcludeAssets="runtime" />
+  </ItemGroup>
+</Project>
